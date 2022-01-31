@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "sonar": "sonar-scanner.bat -D\"sonar.projectKey=app\" -D\"sonar.sources=.\" -D\"sonar.host.url=http://localhost:9000\" -D\"sonar.login=8aa1949a8c6d429d9fdb7e1de7ce6ddd99e319f7\""
   },
   "private": true,
   "dependencies": {
@@ -18,6 +19,7 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "@ngrx/store": "^13.0.2",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
